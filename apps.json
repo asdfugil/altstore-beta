@@ -1,7 +1,7 @@
 {
-  "name": "AltStore",
-  "identifier": "com.rileytestut.AltStore",
-  "sourceURL": "https://asdfugil.github.io/altstore-beta",
+  "name": "AltStore Beta",
+  "identifier": "com.asdfugil.altstore-beta",
+  "sourceURL": "https://asdfugil.github.io/altstore-beta/apps.json",
   "apps": [
     {
       "name": "AltStore [Beta]",
@@ -98,7 +98,7 @@
       "notify": false
     },
     {
-      "title": "You can add AltStore alpha source TEST GIHUB ACTION",
+      "title": "You can add AltStore alpha source",
       "identifier": "alpha-source",
       "caption": "Alpha source URL: https://alpha.altstore.io",
       "tintColor": "0010ff",

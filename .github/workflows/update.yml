@@ -6,6 +6,7 @@ on:
 jobs:
   update-apps:
     runs-on: ubuntu-latest
+    timeout-minutes: 3
 
     steps: 
       - uses: actions/checkout@v2
@@ -18,7 +19,7 @@ jobs:
 
       - name: Update apps.json
         run: |
-          node update-apps.js https://apps.altstore.io ./news.json ./apps.json https://asdfugil.github.io/altstore-beta
+          node update-apps.js https://apps.altstore.io ./news.json ./apps.json https://asdfugil.github.io/altstore-beta/apps.json
       - name: Commit & push changes if there is changes
         run: |
           git config --global user.name "AltStore Beta"
