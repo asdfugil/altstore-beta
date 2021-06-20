@@ -20,6 +20,8 @@ fetch(process.argv[2], { headers: { "user-agent": "AltStore/1 CFNetwork/1126 Dar
 		appsjson.apps = betaApps
 		appsjson.sourceURL = process.argv[5]
 		appsjson.userInfo = {}
+                appsjson.identifier = 'com.asdfugil.altstore-beta'
+                appsjson.name = 'AltStore Beta'
 		return appsjson
 	}).then(newJson => {
 		fs.writeFileSync(process.argv[4],JSON.stringify(newJson,null,2))
