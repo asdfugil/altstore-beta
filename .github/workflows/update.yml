@@ -15,7 +15,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update -y
-          sudo apt install nodejs npm -y
+          sudo apt install nodejs npm -y -qq
           npm i node-fetch
 
       - name: Update apps.json
@@ -25,6 +25,6 @@ jobs:
         run: |
           git config --global user.name "AltStore Beta"
           git config --global user.email actions@github.com
-          git add apps.json; exit 0
-          git commit -am "Update apps"; exit 0
-          git push; exit 0
+          git add apps.json package-lock.json
+          git commit -am "Update apps"
+          git push
