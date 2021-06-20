@@ -1,4 +1,4 @@
-name: Run task on the hour
+name: Update repository
 on:
   workflow_dispatch:
   schedule:
@@ -14,16 +14,17 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt-get update -y
-          sudo apt install nodejs npm -y
-          npm i node-fetch
+          sudo apt-get update -y -qq
+          sudo apt-get install nodejs npm -y -qq
+          npm ci
 
       - name: Update apps.json
         run: |
           node update-apps.js https://apps.altstore.io ./news.json ./apps.json https://asdfugil.github.io/altstore-beta
       - name: Commit & push changes
         run: |
-          git config --global user.name AltStore Beta
+          git config --global user.name "AltStore Beta"
           git config --global user.email actions@github.com
+          git add apps.json package-lock.json
           git commit -am "Update apps"
           git push
