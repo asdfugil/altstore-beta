@@ -98,7 +98,7 @@
       "notify": false
     },
     {
-      "title": "You can add AltStore alpha source TEST GIHUB ACTION",
+      "title": "You can add AltStore alpha source",
       "identifier": "alpha-source",
       "caption": "Alpha source URL: https://alpha.altstore.io",
       "tintColor": "0010ff",
