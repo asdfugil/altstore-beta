@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/asdfugil/altstore-beta/issues"
   },
-  "homepage": "https://github.com/asdfugil/altstore-beta#readme"
+  "homepage": "https://github.com/asdfugil/altstore-beta#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
 }
