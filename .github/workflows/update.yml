@@ -1,4 +1,4 @@
-name: Run task on the hour
+name: Update repository
 on:
   workflow_dispatch:
   schedule:
@@ -23,7 +23,8 @@ jobs:
           node update-apps.js https://apps.altstore.io ./news.json ./apps.json https://asdfugil.github.io/altstore-beta
       - name: Commit & push changes
         run: |
-          git config --global user.name AltStore Beta
+          git config --global user.name "AltStore Beta"
           git config --global user.email actions@github.com
-          git commit -am "Update apps"
-          git push
+          git add apps.json; exit 0
+          git commit -am "Update apps"; exit 0
+          git push; exit 0
