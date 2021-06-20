@@ -1,0 +1,24 @@
+{
+  "name": "altstore-beta",
+  "version": "1.0.0",
+  "description": "AltStore beta repository",
+  "main": "update-apps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asdfugil/altstore-beta.git"
+  },
+  "keywords": [
+    "altstore",
+    "altstore",
+    "beta"
+  ],
+  "author": "asdfugil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asdfugil/altstore-beta/issues"
+  },
+  "homepage": "https://github.com/asdfugil/altstore-beta#readme"
+}
