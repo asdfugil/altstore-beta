@@ -1,4 +1,4 @@
-[ { "title": "Welcome to AltStore Beta", "identifier": "welcome-to-altstore-beta", "caption": "This source is generated using the offical source and is updated hourly.", "tintColor": "ae3803", "date": "2020-04-13", "notify": false
+[ { "title": "Welcome to AltStore Beta", "identifier": "welcome-to-altstore-beta", "caption": "This source is generated using the offical source and is updated hourly.", "tintColor": "ae3803", "date": "2021-06-20", "notify": false
     },
     { "title": "You can add AltStore alpha source", "identifier": "alpha-source", "caption": "Alpha source URL: https://alpha.altstore.io", "tintColor": "0010ff", "date": "2020-05-17", "notify": false
     }
