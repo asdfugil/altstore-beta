@@ -3,4 +3,5 @@ A modified version of Altstore apps.json. Containing only beta apps and making t
 
 Updated hourly using GitHub actions.
 
-The contents of this repository is licensed under MIT license, with the exception of apps.json, which is licensed under AGPLv3.
+The contents of this repository is licensed under MIT license, with the exception of apps.json, which is
+licensed under AGPLv3 (see apps.json_LICENSE)
