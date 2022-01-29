@@ -8,14 +8,21 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
-    steps: 
+    steps:
+      - name: Install pnpm
+        run: |
+          curl -fsSL https://get.pnpm.io/install.sh | sh -
+          echo "$HOME/.local/share/pnpm" >> $GITHUB_PATH
+
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'pnpm'
 
       - name: Install dependencies
         run: |
-          sudo apt-get update -y -qq
-          sudo apt-get install nodejs npm -y -qq
-          npm ci
+          pnpm i --frozen-lockfile
 
       - name: Update apps.json
         run: |
@@ -24,5 +31,5 @@ jobs:
         run: |
           git config --global user.name "AltStore Beta"
           git config --global user.email actions@github.com
-          git add apps.json package-lock.json
+          git add .
           git diff-index --quiet HEAD || (git commit -am "Update apps" && git push)
