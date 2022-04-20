@@ -7,7 +7,7 @@ if (!process.argv[5]) {
 import fetch from "node-fetch"
 import fs from "fs"
 const news = JSON.parse(fs.readFileSync(process.argv[3]));
-fetch(process.argv[2], { headers: { "user-agent": "AltStore/1 CFNetwork/1126 Darwin/19.5.0" }})
+fetch(process.argv[2], { headers: { "user-agent": "AltStore/1 CFNetwork/1331.0.7 Darwin/21.4.0" }})
 	.then(response => response.json())
 	.then(appsjson => {
 		appsjson.news = news
