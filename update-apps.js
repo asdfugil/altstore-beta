@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
-if (!process.argv[6]) {
-	console.error("usage: " + process.argv[1] + " <apps.json url> <news.json location> <new apps.json location> <safe apps.json location> <repository url>");
+if (!process.argv[7]) {
+	console.error("usage: " + process.argv[1] + " <apps.json url> <news.json location> <new apps.json location> <safe apps.json location> <repository url> <safe repository url>");
 	process.exit(1)
 }
 import fetch from "node-fetch"
@@ -29,5 +29,6 @@ fetch(process.argv[2], { headers: { "user-agent": "AltStore/1 CFNetwork/1331.0.7
 		fs.writeFileSync(process.argv[4],JSON.stringify(newJson,null,2))
                 newJson.name = 'AltStore Beta (Trusted bypass)'
 		newJson.identifier = 'io.altstore.example' // pretend to be a hidden trusted source
+		newJson.sourceURL = process.argv[7]
 		fs.writeFileSync(process.argv[5],JSON.stringify(newJson,null,2))
 	})
