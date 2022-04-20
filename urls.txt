@@ -1,0 +1,21 @@
+# grep -rIE 'altstore.io|f000.backblazeb2.com/file' | grep '.swift:' | cut -d\" -f2 | grep -v @
+https://f000.backblazeb2.com/file/altstore-staging/altstore.ipa
+https://cdn.altstore.io/file/altstore/altstore-beta.ipa
+https://cdn.altstore.io/file/altstore/altstore.ipa
+https://altstore.io/altserver/sparkle-macos-staging.xml
+https://f000.backblazeb2.com/file/altstore-staging/altserver/developerdisks.json
+https://cdn.altstore.io/file/altstore/altserver/developerdisks.json
+https://f000.backblazeb2.com/file/altstore-staging/altserver/altplugin/altplugin.json
+https://cdn.altstore.io/file/altstore/altserver/altplugin/altplugin.json
+https://f000.backblazeb2.com/file/altstore/altserver/altplugin/1_0.zip
+https://f000.backblazeb2.com/file/altstore-staging/altstore/trustedsources.json
+https://cdn.altstore.io/file/altstore/altstore/trustedsources.json
+https://f000.backblazeb2.com/file/altstore-staging/altstore/patreon.json
+https://cdn.altstore.io/file/altstore/altstore/patreon.json
+https://altstore.io/patreon
+https://apps.altstore.io
+https://altstore.io/patreon
+https://f000.backblazeb2.com/file/altstore-staging/sources/alpha/apps-alpha-staging.json
+https://f000.backblazeb2.com/file/altstore-staging/apps-staging.json
+https://alpha.altstore.io/
+https://apps.altstore.io/
