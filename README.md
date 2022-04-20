@@ -4,6 +4,7 @@ A modified version of Altstore apps.json. Containing only beta apps and making t
 Updated hourly using GitHub actions.
 
 Add this URL: `https://nickchan.gq/altstore-beta/apps.json`
+If it says spurce not supported, try adding: `https://nickchan.gq/altstore-beta/apps-safe.json`
 
 This repository does not host AltStore beta apps. It merely contains instructions for AltStore to download them
 from [AltStore CDN](https://cdn.altstore.io).
