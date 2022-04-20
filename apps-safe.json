@@ -1,1 +1,110 @@
-{}
+{
+  "name": "AltStore Beta (Trusted bypass)",
+  "identifier": "io.altstore.example",
+  "sourceURL": "https://nickchan.gq/altstore-beta/apps.json",
+  "apps": [
+    {
+      "name": "AltStore [Beta]",
+      "bundleIdentifier": "com.rileytestut.AltStore.Beta",
+      "developerName": "Riley Testut",
+      "subtitle": "An alternative App Store for iOS.",
+      "version": "1.5rc",
+      "versionDate": "2022-04-19T13:00:00-07:00",
+      "versionDescription": "**AltStore 1.5 Release Candidate**\n\nTRUSTED SOURCES*\nTrusted Sources are sources that we've personally reviewed to make sure they meet our safety standards. You can view all Trusted Sources from the Sources page and add them with a single tap.\n\nIMPROVEMENTS\n• Loads “Friend Tier” Patrons much faster on Patreon screen.\n\n*Adding “untrusted” sources via the + button is still supported.",
+      "downloadURL": "https://cdn.altstore.io/file/altstore/apps/altstore/1_5_rc.ipa",
+      "localizedDescription": "AltStore is an alternative app store for non-jailbroken devices. \n\nThis beta release of AltStore adds support for 3rd party sources, allowing you to download apps from other developers directly through AltStore.",
+      "iconURL": "https://user-images.githubusercontent.com/705880/65270980-1eb96f80-dad1-11e9-9367-78ccd25ceb02.png",
+      "tintColor": "018084",
+      "size": 5458029,
+      "beta": false,
+      "screenshotURLs": [
+        "https://user-images.githubusercontent.com/705880/78942028-acf54300-7a6d-11ea-821c-5bb7a9b3e73a.PNG",
+        "https://user-images.githubusercontent.com/705880/78942222-0fe6da00-7a6e-11ea-9f2a-dda16157583c.PNG",
+        "https://user-images.githubusercontent.com/705880/65605577-332cba80-df5e-11e9-9f00-b369ce974f71.PNG"
+      ],
+      "permissions": [
+        {
+          "type": "background-fetch",
+          "usageDescription": "AltStore periodically refreshes apps in the background to prevent them from expiring."
+        },
+        {
+          "type": "background-audio",
+          "usageDescription": "Allows AltStore to run longer than 30 seconds when refreshing apps in background."
+        }
+      ]
+    },
+    {
+      "name": "Delta [Beta]",
+      "bundleIdentifier": "com.rileytestut.Delta.Beta",
+      "developerName": "Riley Testut",
+      "subtitle": "Classic games in your pocket.",
+      "version": "1.3.1b",
+      "versionDate": "2021-11-17T14:00:00-08:00",
+      "versionDescription": "• AltJIT support — Delta can now enable JIT when on the same WiFi as AltServer\n• Fixes game artwork not downloading",
+      "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_3_1_b.ipa",
+      "localizedDescription": "The next consoles for Delta are coming: this beta version of Delta brings support for playing Nintendo DS and Sega Genesis games!\n\nPlease report any issues you find to support@altstore.io. Thanks!",
+      "iconURL": "https://user-images.githubusercontent.com/705880/63391976-4d311700-c37a-11e9-91a8-4fb0c454413d.png",
+      "tintColor": "8A28F7",
+      "size": 19794977,
+      "beta": false,
+      "permissions": [
+        {
+          "type": "photos",
+          "usageDescription": "Allows Delta to use images from your Photo Library as game artwork."
+        }
+      ],
+      "screenshotURLs": [
+        "https://user-images.githubusercontent.com/705880/65600448-f7d9be00-df54-11e9-9e3e-d4c31296da94.PNG",
+        "https://user-images.githubusercontent.com/705880/65601942-e5ad4f00-df57-11e9-9255-1463e0296e46.PNG",
+        "https://user-images.githubusercontent.com/705880/65813009-f2ae8600-e183-11e9-9eb7-704effc11173.png",
+        "https://user-images.githubusercontent.com/705880/65601117-58b5c600-df56-11e9-9c19-9a5ba5da54cf.PNG"
+      ]
+    },
+    {
+      "name": "Clip [Beta]",
+      "bundleIdentifier": "com.rileytestut.Clip.Beta",
+      "subtitle": "Manage your clipboard history with ease.",
+      "developerName": "Riley Testut",
+      "version": "1.1b1",
+      "versionDate": "2020-06-17T12:30:00-07:00",
+      "versionDescription": "This update adds a Custom Keyboard app extension for quick access to clippings when editing text.\n\nTo enable the keyboard, go to Settings > General > Keyboard > Keyboards > Add New Keyboard... and add \"ClipBoard\". Once added, make sure to then enable \"Allow Full Access\" for ClipBoard so it can access your clippings.",
+      "downloadURL": "https://f000.backblazeb2.com/file/altstore/apps/clip/1_1_b1.ipa",
+      "localizedDescription": "Clip is a simple clipboard manager for iOS. \n\nUnlike other clipboard managers, Clip can continue monitoring your clipboard while in the background. No longer do you need to remember to manually open or share to an app to save your clipboard; just copy and paste as you would normally do, and Clip will have your back.\n\nIn addition to background monitoring, Clip also has these features:\n\n• Save text, URLs, and images copied to the clipboard.\n• Copy, delete, or share any clippings saved to Clip.\n• Customizable history limit.\n\nDownload Clip today, and never worry about losing your clipboard again!",
+      "iconURL": "https://user-images.githubusercontent.com/705880/63391981-5326f800-c37a-11e9-99d8-760fd06bb601.png",
+      "tintColor": "EC008C",
+      "size": 462771,
+      "beta": false,
+      "permissions": [
+        {
+          "type": "background-audio",
+          "usageDescription": "Allows Clip to continuously monitor your clipboard in the background."
+        }
+      ],
+      "screenshotURLs": [
+        "https://user-images.githubusercontent.com/705880/63391950-34286600-c37a-11e9-965f-832efe3da507.png",
+        "https://user-images.githubusercontent.com/705880/70830209-8e738980-1da4-11ea-8b3b-6e5fbc78adff.png",
+        "https://user-images.githubusercontent.com/705880/84842227-70a80b00-aff9-11ea-8b04-bedb1f49c4a7.PNG",
+        "https://user-images.githubusercontent.com/705880/84842231-7271ce80-aff9-11ea-9272-e128aeceb95b.PNG"
+      ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Welcome to AltStore Beta",
+      "identifier": "welcome-to-altstore-beta",
+      "caption": "This source is generated using the offical source and is updated hourly.",
+      "tintColor": "ae3803",
+      "date": "2021-06-20",
+      "notify": false
+    },
+    {
+      "title": "You can add AltStore alpha source",
+      "identifier": "alpha-source",
+      "caption": "Alpha source URL: https://alpha.altstore.io",
+      "tintColor": "0010ff",
+      "date": "2020-05-17",
+      "notify": false
+    }
+  ],
+  "userInfo": {}
+}
