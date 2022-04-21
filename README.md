@@ -6,9 +6,9 @@ Updated hourly using GitHub actions.
 **Please note that some Ad blockers block all .gq domains.** I 
 will get an actual domain as soon as possible. Please add 
 nickchan.gq to your adblocker excpetions if you encounter 
-issues related to it. This site currently does not disolay ads 
-or track you (other than what GitHub does on all GitHub pages 
-- I cannot control that). When the domain changes, the new URL 
+issues related to it. This site currently does not display ads 
+or track you (other than what GitHub does on all GitHub pages - 
+I cannot control that). When the domain changes, the new URL 
 will always be available at 
 https://github.com/asdfugil/altstore-beta .
 
