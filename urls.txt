@@ -19,3 +19,4 @@ https://f000.backblazeb2.com/file/altstore-staging/sources/alpha/apps-alpha-stag
 https://f000.backblazeb2.com/file/altstore-staging/apps-staging.json
 https://alpha.altstore.io/
 https://apps.altstore.io/
+https://altstore.io/altserver/sparkle-windows.xml
