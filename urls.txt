@@ -21,3 +21,4 @@ https://alpha.altstore.io/
 https://apps.altstore.io/
 https://altstore.io/altserver/sparkle-windows.xml
 https://cdn.altstore.io/file/altstore/altinstaller.zip
+https://f000.backblazeb2.com/file/altstore/altinstaller.zip
