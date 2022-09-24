@@ -1,7 +1,7 @@
 {
   "name": "AltStore Beta (Trusted bypass)",
   "identifier": "io.altstore.example",
-  "sourceURL": "https://nickchan.gq/altstore-beta/apps-safe.json",
+  "sourceURL": "https://www.nickchan.lol/altstore-beta/apps-safe.json",
   "apps": [
     {
       "name": "AltStore [Beta]",

@@ -41,7 +41,7 @@ jobs:
 
       - name: Update apps.json
         run: |
-          node update-apps.js https://apps.altstore.io ./news.json ./apps.json ./apps-safe.json https://nickchan.gq/altstore-beta/apps{,-safe}.json
+          node update-apps.js https://apps.altstore.io ./news.json ./apps.json ./apps-safe.json https://www.nickchan.lol/altstore-beta/apps{,-safe}.json
 
       - name: Commit & push changes if there is changes
         run: |
