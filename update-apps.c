@@ -99,7 +99,7 @@ int main(int argc, char *argv[])
   json_object_set(appsjson, "sourceURL", json_string(argv[5]));
   json_t *user_info = json_object();
   json_object_set(appsjson, "userInfo", user_info);
-  json_object_set(appsjson, "identifier", json_string("gq.nickchan.altstore-beta"));
+  json_object_set(appsjson, "identifier", json_string("lol.nickchan.altstore-beta"));
   json_object_set(appsjson, "name", json_string("AltStore Beta"));
 
   // Write out modified apps.json
