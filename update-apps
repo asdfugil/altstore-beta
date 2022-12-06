@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec ./update_apps_bin https://apps.altstore.io ./news.json ./out/apps.json ./out/apps-safe.json https://nickchan.lol/altstore-beta/apps{,-safe}.json
