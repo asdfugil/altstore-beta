@@ -5,6 +5,11 @@
 #include <jansson.h>
 
 #define BUFFER_SIZE 32768
+#ifdef DEBUG
+#define dprintf(...) fprintf(stderr, __VA_ARGS__)
+#else
+#define dprintf(...)
+#endif
 
 struct buffer
 {
@@ -30,6 +35,7 @@ static size_t write_callback(char *ptr, size_t size, size_t nmemb, void *userdat
 
 int main(int argc, char *argv[])
 {
+  dprintf("altstore-beta source generator DEBUG build\n");
   if (argc < 7)
   {
     fprintf(stderr, "usage: %s <apps.json url> <news.json location> <new apps.json location> <safe apps.json location> <repository url> <safe repository url>\n", argv[0]);
@@ -47,6 +53,7 @@ int main(int argc, char *argv[])
   }
 
   // Download apps.json
+  dprintf("Downloading JSON\n");
   CURL *curl;
   CURLcode res;
   struct buffer buffer = {NULL, 0};
@@ -61,6 +68,7 @@ int main(int argc, char *argv[])
     res = curl_easy_perform(curl);
     curl_easy_cleanup(curl);
   }
+  dprintf("Downloaded JSON\n");
 
   // Parse apps.json
   json_t *appsjson;
@@ -80,9 +88,14 @@ int main(int argc, char *argv[])
   json_t *app;
   json_array_foreach(apps, index, app)
   {
-    int beta = json_integer_value(json_object_get(app, "beta"));
+    int beta = json_is_true(json_object_get(app, "beta"));
+#ifdef DEBUG
+    const char* app_name = json_string_value(json_object_get(app, "name"));
+    dprintf("App %s beta status %d\n", app_name, beta);
+#endif
     if (beta)
     {
+      dprintf("Beta app %s found! Appending.\n", app_name);
       json_object_set(app, "beta", json_false());
       const char *name = json_string_value(json_object_get(app, "name"));
       char *name_beta = malloc(strlen(name) + 8); // 8 = strlen(" [Beta]")
@@ -103,6 +116,7 @@ int main(int argc, char *argv[])
   json_object_set(appsjson, "name", json_string("AltStore Beta"));
 
   // Write out modified apps.json
+  dprintf("Writing modified JSON to %s\n", argv[3]);
   json_dump_file(appsjson, argv[3], JSON_INDENT(2));
 
   // Modify apps.json again for safe version
@@ -111,6 +125,7 @@ int main(int argc, char *argv[])
   json_object_set(appsjson, "sourceURL", json_string(argv[6]));
 
   // Write out safe version of apps.json
+  dprintf("Writing bypass JSON to %s\n", argv[4]);
   json_dump_file(appsjson, argv[4], JSON_INDENT(2));
 
   // Clean up
