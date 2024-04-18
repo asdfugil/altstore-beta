@@ -88,20 +88,22 @@ int main(int argc, char *argv[])
   json_t *app;
   json_array_foreach(apps, index, app)
   {
-    int beta = json_is_true(json_object_get(app, "beta"));
+    json_t *beta_obj = json_object_get(app, "beta");
+    int beta = beta_obj ? json_is_true(beta_obj) : 0;
+    json_t *patreon = json_object_get(app, "pateron");
 #ifdef DEBUG
     const char* app_name = json_string_value(json_object_get(app, "name"));
     dprintf("App %s beta status %d\n", app_name, beta);
 #endif
-    if (beta)
+    if (beta || patreon)
     {
       dprintf("Beta app %s found! Appending.\n", app_name);
       json_object_set(app, "beta", json_false());
       const char *name = json_string_value(json_object_get(app, "name"));
-      char *name_beta = malloc(strlen(name) + 8); // 8 = strlen(" [Beta]")
-      strcpy(name_beta, name);
-      strcat(name_beta, " [Beta]");
+      char *name_beta = NULL;
+      asprintf(&name_beta, "%s %s", name, beta ? "[Beta]" : "[Patreon]");
       json_object_set(app, "name", json_string(name_beta));
+      json_object_del(app, "patreon");
       json_array_append(beta_apps, app);
       free(name_beta);
     }
