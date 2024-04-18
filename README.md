@@ -19,3 +19,9 @@ contains instructions for AltStore to download them from
 The contents of this repository are licensed under the MIT
 license, with the exception of `apps.json` and `apps-safe.json`,
 which are licensed under AGPLv3 (see [LICENSE](LICENSE))
+
+## Patch
+
+It appears that in some versions of AltStore 2.0 beta, the code is updated
+to not even refresh AltStore itself when patreon is not detected, so a new
+approach is probably needed.
